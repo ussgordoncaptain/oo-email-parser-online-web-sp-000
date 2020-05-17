@@ -10,6 +10,8 @@ class EmailParser
   def parse 
     temp_arr= emails.split(" ")
     final = []
-    temp_arr.each do |element |
+    temp_arr.each do |element|
+      element.each do  |
+    end
   end
 end
