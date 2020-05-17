@@ -8,6 +8,8 @@ class EmailParser
     @emails_raw = list
   end
   def parse 
-    
+    temp_arr= emails.split(" ")
+    final = []
+    temp_arr.each do |element |
   end
 end
