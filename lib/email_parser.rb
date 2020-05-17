@@ -11,7 +11,7 @@ class EmailParser
     temp_arr= emails.split(" ")
     final = []
     temp_arr.each do |element|
-      temp_2d_arr=
+      temp_2d_arr= element.
     end
   end
 end
