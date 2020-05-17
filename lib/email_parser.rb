@@ -9,7 +9,7 @@ class EmailAddressParser
     @parsed_arr = []
   end
   def parse 
-    temp_arr= emails.split(" ")
+    temp_arr= emails_raw.split(" ")
      
     temp_arr.each do |element|
       temp_2d_arr= element.split (",")
