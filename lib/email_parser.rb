@@ -14,9 +14,9 @@ class EmailParser
     temp_arr.each do |element|
       temp_2d_arr= element.split (",")
       temp_2d_arr.each do |address| 
-        @parsed_arrs << address
+        @parsed_arr << address
       end
     end
-    return @parsed_arrs
+    return @parsed_arr
   end
 end
