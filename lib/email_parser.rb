@@ -11,7 +11,11 @@ class EmailParser
     temp_arr= emails.split(" ")
     final = []
     temp_arr.each do |element|
-      temp_2d_arr= element.
+      temp_2d_arr= element.split (",")
+      temp_2d_arr.each do |address| 
+        final << address
+      end
     end
+    return final
   end
 end
