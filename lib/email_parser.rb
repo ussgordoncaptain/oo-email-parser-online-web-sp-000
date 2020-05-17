@@ -6,16 +6,17 @@ class EmailParser
   attr_accessor :emails_raw, :parsed_arr
   def initialize(list)
     @emails_raw = list
+    @parsed_arr = []
   end
   def parse 
     temp_arr= emails.split(" ")
-    final = []
+     
     temp_arr.each do |element|
       temp_2d_arr= element.split (",")
       temp_2d_arr.each do |address| 
-        final << address
+        @parsed_arrs << address
       end
     end
-    return final
+    return @parsed_arrs
   end
 end
