@@ -14,6 +14,7 @@ class EmailAddressParser
     temp_arr.each do |element|
       temp_2d_arr= element.split (",")
       temp_2d_arr.each do |address| 
+        if @parsed_arr 
         @parsed_arr << address
       end
     end
